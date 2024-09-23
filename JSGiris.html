@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Giriş</title>
+    
+</head>
+<body>
+    <h1>JavaScript Öğreniyorum</h1>
+    <p><!-- buranın içini js ile değiştirebilir miyiz? -->
+
+    </p>
+
+    <script>
+        
+        // burası javascript bölgesi 
+
+        //js te HTML dökümanına karşılık gelen document adında bir nesne vardır ( çizim yaparken herşeyin başı olarak DOM ağacnın tepesinde gösterdik.)
+        //document nesnesi üzerinden mevcut sayfadaki dokumanın tüm elemenlerine erişebiliriz. (belirli yöntemlerle)
+
+        // sayfadaki ilk p elementine eriş ve içinde metni değiştir.
+
+        let ilkParag = document.querySelector("p");
+
+        //nesnelerin özelliklerine . operatörü ile erişiriz
+        //= operatörü ile yeni değerler veririz
+        ilkParag.textContent= "Biz kimseyi yarı yolda bırakmadık onlar müsait bir yerde indiler... - Bir Kamyon Arkası Sözü";
+        //elementlerin özelliklerinin özellijlerine erişip değiştirebiliriz
+        ilkParag.style.color="purple";
+
+        // DOM agacının ilk dallarından biri olan body'ye bu şekilde erişebiliriz
+        document.body.style.background="linear-gradient(to right, orange, white)";
+
+        // PROGRAMLAMA:
+        // Komutların belli sırada belirli bir amaç şöşn çalıştırılması (ALGORİTMA İLE)
+        // komutlar insan dilini yakın bir dille bilgisayara iş yapması için fısıldamaktır.
+        /*
+        alert("Hoooppp .... palaaa!");
+        alert("Hoşgeldin :)"); 
+        */
+    </script>
+</body>
+</html>
